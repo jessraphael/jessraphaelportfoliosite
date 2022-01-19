@@ -1,102 +1,54 @@
+import React from "react";
 import { FC } from "react";
-import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
-import Button from "../Layout/Button";
+import userData from "../data";
 
-const Features: FC = ({ children }) => {
+
+const Projects: FC = ({ children }) => {
   return (
-    <div className="space mx-8 overflow-hidden">
-      <div id="projects" className="relative -top-24"></div>
-      <div className="h-[80vh] lg:h-auto flex flex-col justify-center items-center">
-        <h1 className="text-6xl pt-8 py-4 font-semibold text-center text-white">
-          Features
+
+    <div className="space overflow-hidden">
+    <div id="projects" className="absolute -top-24"></div>
+    <section className="bg-gray-800">
+      <div className="max-w-6xl mx-auto h-48 dark:bg-gray-800">
+        <h1 className=" text-white text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+          Projects
         </h1>
-        <p className="text-center text-white text-xl font-light mt-2 mb-16">
-          Product Walkthrough
-        </p>
       </div>
-
-      <div className="grid lg:grid-cols-3  min-h-screen lg:h-auto">
-        <div className="flex justify-center items-center h-full mt-8">
-          <div className="flex flex-col w-4/5">
-            <span className="text-4xl pt-8 font-semibold text-center text-white">
-              Data Extraction
-            </span>
-
-            <span className="subtext pt-8 text-center text-white">
-              Upload your receipt via our telegram bot and our API will scan the
-              details and generate the list of the priced items.
-            </span>
-
-            <div className="mt-8 transform hover:scale-110 hover:-translate-y-16 transition-all flex justify-center">
-              <br />
-              <Fade direction="up">
-                <Image
-                  src="/Upload.png"
-                  alt="Upload Icon"
-                  layout="fixed"
-                  width={200}
-                  height={200}
-                />
-              </Fade>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center items-center h-full mt-8">
-          <div className="flex flex-col w-4/5">
-            <span className="text-4xl pt-15 font-semibold text-center text-white">
-              Expenses Splitting
-            </span>
-
-            <span className="subtext pt-8 text-center text-white">
-              Easily split the bill with any group of friends based on their
-              purchases!
-            </span>
-
-            <div className="mt-8 transform hover:scale-110 hover:-translate-y-16 transition-all flex justify-center">
-              <Fade direction="up">
-                <Image
-                  src="/Bill.png"
-                  alt="Bill Icon"
-                  layout="fixed"
-                  width={200}
-                  height={200}
-                />
-              </Fade>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center items-center h-full mt-8">
-          <div className="flex flex-col w-4/5">
-            <span className="text-4xl pt-8 font-semibold text-center text-white">
-              Bill Generation 
-            </span>
-
-            <span className="subtext pt-8 text-center text-white">
-              Confirm settlement to send the summarised bill tagged to each user
-              via our telegram bot.
-            </span>
-
-            <div className="mt-8 transform hover:scale-110 hover:-translate-y-16 transition-all flex justify-center">
-              <Fade direction="up">
-                <Image
-                  src="/Envelope.png"
-                  alt="Upload Icon"
-                  layout="fixed"
-                  width={200}
-                  height={200}
-                />
-              </Fade>
-            </div>
-          </div>
+      {/* Grid starts here */}
+      <div className=" dark:bg-black">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+          {userData.projects.map((proj, idx) => (
+            <ProjectCard
+              title={proj.title}
+              link={proj.link}
+              imgUrl={proj.imgUrl}
+              number={`${idx + 1}`}
+            />
+          ))}
         </div>
       </div>
-
-      <div className="space"></div>
+    </section>
     </div>
   );
-};
+}
 
-export default Features;
+export default Projects;
+
+const ProjectCard = ({ title, link, imgUrl, number } : { title : string, link : string, imgUrl : string  , number : string})  => {
+  return (
+    <a href={link} className="w-full block shadow-2xl">
+      <div className="relative overflow-hidden">
+        <div className="h-72 object-cover">
+          <img
+            src={imgUrl}
+            alt="portfolio"
+            className="transform opacity-90 hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
+          />
+        </div>
+        <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+           {title}
+        </h1>
+      </div>
+    </a>
+  );
+};

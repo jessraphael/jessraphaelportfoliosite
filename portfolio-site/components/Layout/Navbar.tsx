@@ -13,7 +13,7 @@ const Navbar: FC<Props> = ({ location }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const navItems = [
-    { title: "Home", href: "#home" },
+    { title: "Home", href: "#" },
     { title: "About Me", href: "#aboutme" },
     { title: "Projects", href: "#projects" },
     { title: "Experiences", href: "#experiences" },

@@ -6,9 +6,9 @@ import userData from "../data";
 
 const Experiences: FC = ({ children }) => {
   return (
-
-    <section className=" px-8 py-40">
+    <div className="space overflow-hidden">
       <div id="experiences" className="absolute -top-24"></div>
+    <section className=" px-8 py-40">
       <div className="max-w-6xl mx-auto px h-48]">
         <h1 className="text-6xl pt-8 py-4 font-semibold text-center text-white">
           Experiences
@@ -38,6 +38,7 @@ const Experiences: FC = ({ children }) => {
           ))}
         </div>
     </section>
+    </div>
   );
 };
 
@@ -57,7 +58,7 @@ const ExperienceCard = ({
   companyLink: string;
 }) => {
   return (
-    <div className="relative experience-card border p-4 rounded-md shadow-xl bg-gray-800 z-10 mx-4">
+    <div className="relative experience-card p-4  shadow-xl bg-gray-800 z-10 mx-4">
       <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl font-bold text-white">
         {year}
       </h1>
