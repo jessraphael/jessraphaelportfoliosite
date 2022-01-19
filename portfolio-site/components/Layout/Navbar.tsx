@@ -17,7 +17,6 @@ const Navbar: FC<Props> = ({ location }) => {
     { title: "About Me", href: "#aboutme" },
     { title: "Projects", href: "#projects" },
     { title: "Experiences", href: "#experiences" },
-    { title: "Education", href: "#education" },
   ];
 
   return (

@@ -6,6 +6,7 @@ import Landing from "../components/Section/Landing";
 import Border from "../components/Layout/Border";
 import Experiences from "../components/Section/Experiences"
 import AboutMe from "../components/Section/AboutMe"
+import Footer from "../components/Section/Footer";
 const Home: NextPage = () => {
   return (
     <>
@@ -18,6 +19,8 @@ const Home: NextPage = () => {
       <Experiences />
       </Border>
     </Body>
+
+    <Footer />
 
     </>
   );

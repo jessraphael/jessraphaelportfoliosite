@@ -4,8 +4,9 @@ const userData = {
     designation: "Software Developer",
     avatarUrl: "/avatar.png",
     email: "jessraphaelong@gmail.com",
-    phone: "+65 83231011",
     address: "Singapore",
+
+
     projects: [
       {
         title: "Tailwind Master Kit",
@@ -73,12 +74,13 @@ const userData = {
       },
     ],
     resumeUrl:
-      "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
+      "",
+
     socialLinks: {
       instagram: "https://www.instagram.com/jxphxel_/",
       linkedin: "https://www.linkedin.com/in/jessraphael/",
       github: "https://github.com/jessraphael",
-      facebook: "https://facebook.com/",
+      facebook: "https://www.facebook.com/jessongweihao"
     },
   };
   
