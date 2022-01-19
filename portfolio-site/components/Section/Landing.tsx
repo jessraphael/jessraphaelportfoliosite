@@ -24,7 +24,7 @@ const Landing: FC = ({ children }) => {
                 <div className="ml-auto">
                   <Button
                     className="px-10 py-2 bg-white text-black font-bold max-w-max text-center"
-                    href="telebot"
+                    href="aboutme"
                   >
                     About Me
                   </Button>
