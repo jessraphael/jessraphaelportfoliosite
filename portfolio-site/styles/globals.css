@@ -10,6 +10,7 @@ body {
   @apply font-nunito;
 }
 
+
 @layer components {
   .button {
     @apply px-10 py-2 text-xl text-black font-bold max-w-max;

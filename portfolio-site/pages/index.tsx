@@ -9,11 +9,11 @@ const Home: NextPage = () => {
     <>
     <MyHead />
     <Body>
-      <Navbar location="home"/>
       <Border>
       <Landing />
       </Border>
     </Body>
+
     </>
   );
 };
