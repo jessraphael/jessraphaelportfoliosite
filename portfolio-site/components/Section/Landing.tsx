@@ -5,6 +5,7 @@ import Button from "../Layout/Button";
 
 const Landing: FC = ({ children }) => {
   return (
+    <div className="overflow-hidden">
     <div className="pt-[84px] h-screen grid place-items-center mx-7">
       <div id="home" className="absolute -top-24"></div>
       <div className="grid md:grid-cols-2 h-4/5">
@@ -59,6 +60,7 @@ const Landing: FC = ({ children }) => {
         </div>
         <div className="md:space"></div>
       </div>
+    </div>
     </div>
   );
 };
