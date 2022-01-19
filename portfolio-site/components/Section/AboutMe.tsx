@@ -11,7 +11,7 @@ const AboutMe: FC = ({ children }) => {
       <div className="space overflow-hidden">
       <section className="dark:bg-gray-800">
         <div className="max-w-6xl mx-auto h-48 dark:bg-gray-800">
-          <h1 className="text-white bg-whitetext-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+          <h1 className="text-white text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
             About Me.
           </h1>
         </div>

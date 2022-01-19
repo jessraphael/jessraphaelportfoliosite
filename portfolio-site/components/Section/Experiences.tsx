@@ -9,12 +9,12 @@ const Experiences: FC = ({ children }) => {
     <div className="space overflow-hidden">
       <div id="experiences" className="absolute -top-24"></div>
     <section className=" px-8 py-40">
-      <div className="max-w-6xl mx-auto px h-48]">
-        <h1 className="text-6xl pt-8 py-4 font-semibold text-center text-white">
-          Experiences
-        </h1>
-      </div>
-        <div className="grid grid-cols-1 max-w-xl mx-auto pt-20">
+    <div className="max-w-6xl mx-auto h-48 dark:bg-gray-800">
+          <h1 className="text-white text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+            Experiences
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 max-w-xl mt-10 mx-auto pt-20">
           {/* Experience card */}
           {userData.experience.map((exp, idx) => (
             <>
