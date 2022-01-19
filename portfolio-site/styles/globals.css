@@ -18,49 +18,14 @@ body {
 
   .svg-bg {
     background-color: #000918;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23b01e18' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d31a0e' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23be3726' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23da341c' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23cc5133' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23e24d29' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23db6a41' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23e96737' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23e9844e' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23f08145' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23f79d5c' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='250' preserveAspectRatio='none' viewBox='0 0 1440 250'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3crect width='1440' height='250' x='0' y='0' fill='rgba(0%2c 0%2c 0%2c 1)'%3e%3c/rect%3e%3cpath d='M30 250L280 0L343 0L93 250z' fill='url(%23SvgjsLinearGradient1022)'%3e%3c/path%3e%3cpath d='M284.6 250L534.6 0L692.1 0L442.1 250z' fill='url(%23SvgjsLinearGradient1022)'%3e%3c/path%3e%3cpath d='M498.20000000000005 250L748.2 0L980.7 0L730.7 250z' fill='url(%23SvgjsLinearGradient1022)'%3e%3c/path%3e%3cpath d='M721.8000000000001 250L971.8000000000001 0L1027.3000000000002 0L777.3000000000001 250z' fill='url(%23SvgjsLinearGradient1022)'%3e%3c/path%3e%3cpath d='M1400 250L1150 0L1054 0L1304 250z' fill='url(%23SvgjsLinearGradient1023)'%3e%3c/path%3e%3cpath d='M1174.4 250L924.4000000000001 0L672.4000000000001 0L922.4000000000001 250z' fill='url(%23SvgjsLinearGradient1023)'%3e%3c/path%3e%3cpath d='M939.8 250L689.8 0L562.3 0L812.3 250z' fill='url(%23SvgjsLinearGradient1023)'%3e%3c/path%3e%3cpath d='M715.1999999999999 250L465.19999999999993 0L313.69999999999993 0L563.6999999999999 250z' fill='url(%23SvgjsLinearGradient1023)'%3e%3c/path%3e%3cpath d='M1309.52147739874 250L1440 119.52147739874007L1440 250z' fill='url(%23SvgjsLinearGradient1022)'%3e%3c/path%3e%3cpath d='M0 250L130.47852260125993 250L 0 119.52147739874007z' fill='url(%23SvgjsLinearGradient1023)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='1440' height='250' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1022'%3e%3cstop stop-color='rgba(51%2c 52%2c 57%2c 0.86)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(51%2c 52%2c 57%2c 0.86)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1023'%3e%3cstop stop-color='rgba(51%2c 52%2c 57%2c 0.86)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(51%2c 52%2c 57%2c 0.86)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
     background-attachment: fixed;
     background-size: cover;
   }
 
+  
   .space {
     margin-top: 150px;
   }
 
-  .bg-gradient {
-    @apply shadow transition-all bg-opacity-70;
-  }
-
-  .icon {
-    @apply text-white text-4xl cursor-pointer;
-  }
-
-  .subtext {
-    font-size: 18px;
-  }
-
-  .split-header {
-    font-size: 24px;
-  }
-
-  .pay-green {
-    color: #1a936f;
-  }
-
-  .pay-primary {
-    color: #1a936f;
-  }
-
-  .pay-secondary {
-    color: #b0413e;
-  }
-
-  .pay-primary-light {
-    background-color: #546a7b;
-  }
-
-  .item-card {
-    color: #000000;
-    background-color: #f5f5f5;
-  }
 }

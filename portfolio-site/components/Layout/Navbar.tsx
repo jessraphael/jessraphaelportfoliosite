@@ -6,7 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 
 type Props = {
-  location: "home" | "split";
+  location: "home";
 };
 
 const Navbar: FC<Props> = ({ location }) => {
@@ -14,10 +14,10 @@ const Navbar: FC<Props> = ({ location }) => {
 
   const navItems = [
     { title: "Home", href: "#home" },
-    { title: "Features", href: "#features" },
-    { title: "Telebot", href: "#telebot" },
-    { title: "About Us", href: "#aboutUs" },
-    { title: "GitHub", href: "#github" },
+    { title: "About Me", href: "#aboutme" },
+    { title: "Projects", href: "#projects" },
+    { title: "Experiences", href: "#experiences" },
+    { title: "Education", href: "#education" },
   ];
 
   return (
@@ -27,7 +27,7 @@ const Navbar: FC<Props> = ({ location }) => {
       <div>
         <Link href="/" passHref>
           <div className="text-1xl font-black text-white select-nonehover:text-transparent bg-clip-text cursor-pointer select-none">
-            PlsPayMeLah
+            Jess Raphael Ong
           </div>
         </Link>
       </div>
@@ -61,9 +61,8 @@ const Navbar: FC<Props> = ({ location }) => {
             })}
           </div>
           {/* DESKTOP */}
-          <div className="hidden sm:flex flex-grow max-w-3xl justify-evenly">
+          <div className="hidden sm:flex flex-grow max-w-md justify-evenly">
             {navItems
-              .filter((item) => item.title !== "GitHub")
               .map((item) => {
                 return (
                   <NavItem
