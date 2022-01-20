@@ -1,6 +1,7 @@
 import React from "react";
 import { FC } from "react";
 import userData from "../data";
+import Image from "next/image";
 
 
 const Projects: FC = ({ children }) => {
@@ -39,7 +40,7 @@ const ProjectCard = ({ title, link, imgUrl, number } : { title : string, link : 
     <a href={link} className="w-full block shadow-2xl">
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
-          <img
+          <Image
             src={imgUrl}
             alt="portfolio"
             className="transform opacity-90 hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
