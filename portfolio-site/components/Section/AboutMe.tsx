@@ -46,12 +46,15 @@ const AboutMe: FC = ({ children }) => {
                   Tech Stack
                 </h1>
                 <div className="flex flex-row flex-wrap mt-8">
+
+                  
                   <Image
                     src="/icons/java.png"
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Java"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
                   <Image
@@ -59,7 +62,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Python"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
                   <Image
@@ -67,7 +71,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Dart"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -75,7 +80,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Flutter"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -83,7 +89,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Jakarta EE"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -91,7 +98,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="HTML 5"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 
@@ -100,7 +108,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="CSS 3"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -108,7 +117,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Next.Js"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -116,7 +126,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={60}
                     height={50}
-                    className="mx-5 my-4"
+                    title="React.js"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -124,7 +135,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Vue3"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -132,7 +144,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Quasar"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -140,7 +153,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Tailwind CSS"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -148,7 +162,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Typescript"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -156,7 +171,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="JavaScript"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 
@@ -166,7 +182,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Firebase"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -174,15 +191,17 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="MongoDB"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
-                    src="/icons/MYSQL.png"
+                    src="/icons/mysql.png"
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="MySQL"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -190,7 +209,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Git"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 
@@ -199,7 +219,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Figma"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 <Image
@@ -207,7 +228,8 @@ const AboutMe: FC = ({ children }) => {
                     alt="img"
                     width={50}
                     height={50}
-                    className="mx-5 my-4"
+                    title="Tableau"
+                    className="cursor-pointer mx-5 my-4"
                   />
 
 
@@ -216,7 +238,7 @@ const AboutMe: FC = ({ children }) => {
 
               </div>
 
-              <div className="flex justify-center h-full">
+              <div className="px-5 py-5 flex justify-center h-full">
                 <Image
                   src="/mountain.jpg"
                   alt="cover icon"

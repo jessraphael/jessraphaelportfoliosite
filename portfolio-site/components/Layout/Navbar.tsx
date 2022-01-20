@@ -76,13 +76,7 @@ const Navbar: FC<Props> = ({ location }) => {
       ) : (
         <></>
       )}
-      <div
-        className={`${location === "home" ? "hidden" : ""} sm:block ml-auto`}
-      >
-        <a href="#github">
-          <BsGithub className="icon" />
-        </a>
-      </div>
+
     </div>
   );
 };

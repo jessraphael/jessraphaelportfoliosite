@@ -16,18 +16,19 @@ const Projects: FC = ({ children }) => {
         </div>
         {/* Grid starts here */}
         <Fade direction="up" delay={100}>
-        <div className=" dark:bg-black">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-            {userData.projects.map((proj, idx) => (
-              <ProjectCard
-                key={proj.title}
-                title={proj.title}
-                link={proj.link}
-                imgUrl={proj.imgUrl}
-              />
-            ))}
+          <div className=" dark:bg-black">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+              {userData.projects.map((proj, idx) => (
+                <ProjectCard
+                  key={proj.title}
+                  title={proj.title}
+                  link={proj.link}
+                  imgUrl={proj.imgUrl}
+                  description={proj.description}
+                />
+              ))}
+            </div>
           </div>
-        </div>
         </Fade>
       </section>
     </div>
@@ -40,12 +41,15 @@ const ProjectCard = ({
   title,
   link,
   imgUrl,
+  description,
 }: {
   title: string;
   link: string;
   imgUrl: string;
+  description: string;
 }) => {
   return (
+    <div className="w-full h-full col-2">
     <a href={link} className="w-full block shadow-2xl">
       <div className="relative overflow-hidden">
         <div className="h-72 object-cover">
@@ -61,5 +65,9 @@ const ProjectCard = ({
         </h1>
       </div>
     </a>
+    <div className="bg-black w-full py-5 px-5 h-1/5">
+          <p className="w-full text-gray-50 text-center font-semilight text-md"> {description} </p>
+        </div>
+    </div>
   );
 };

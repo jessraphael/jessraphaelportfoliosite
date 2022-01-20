@@ -11,7 +11,7 @@ const NavItem: FC<Props> = ({ title, href, closeSidebar }) => {
     <>
       <div>
         <a
-          className="flex flex-col items-center text-center text-white cursor-pointer text-md hover:text-ai-500"
+          className="flex flex-col items-center text-center text-white cursor-pointer text-md "
           href={href}
           onClick={closeSidebar}
         >
