@@ -1,9 +1,5 @@
 
-    export const heroData = {
-      quote: "Life is best lived as an ",
-      emphasis: "Adventure."
-  }
-  
+
 
 
 const userData = {
