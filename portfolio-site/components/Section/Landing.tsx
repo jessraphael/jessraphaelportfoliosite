@@ -21,7 +21,8 @@ const LandingPage: FC = () => {
   }, []);
 
   return (
-    <div id="home">
+    <div>
+      <div id="home" className="absolute -top-24"></div>
       <div className="flex flex-col items-center justify-center w-full h-screen bg-landing">
         <div
           className={`flex items-center ${

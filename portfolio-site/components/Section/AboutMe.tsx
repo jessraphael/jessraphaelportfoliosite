@@ -6,9 +6,10 @@ import { Fade } from "react-awesome-reveal";
 
 const AboutMe: FC = ({ children }) => {
   return (
-    <div>
-      <div id="aboutme" className="absolute -top-24"></div>
+    <div className="pt-[84px] h-screen grid place-items-center mx-7">
+      
       <div className="space overflow-hidden">
+      <div id="aboutme" className="absolute -top-24"></div>
         <section>
           <div className="max-w-6xl mx-auto h-48 bg-gray-800">
             <h1 className="text-white text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
