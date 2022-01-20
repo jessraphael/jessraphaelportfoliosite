@@ -17,7 +17,11 @@ const userData = {
 
 
     projects: [
-
+      {
+        title: "PayMeLahBot",
+        link: "https://paymelah.vercel.app/",
+        imgUrl: "/paymepls.png",
+      },
       {
         title: "Ai",
         link: "https://dlw-hackathon.vercel.app/",
