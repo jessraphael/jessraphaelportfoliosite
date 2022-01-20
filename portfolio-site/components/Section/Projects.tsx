@@ -7,7 +7,7 @@ const Projects: FC = ({ children }) => {
   return (
     <div className="space overflow-hidden">
       <div id="projects" className="absolute -top-24"></div>
-      <section className="bg-gray-800">
+      <section>
         <div className="max-w-6xl mx-auto h-48 dark:bg-gray-800">
           <h1 className=" text-white text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
             Projects
