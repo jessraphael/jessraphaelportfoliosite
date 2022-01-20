@@ -42,23 +42,18 @@ const AboutMe: FC = ({ children }) => {
                     </p>
                   ))}
 
-<p
-                      className="text-xl text-gray-700 mb-1 dark:text-gray-300 "
-                    >
-                      For any new opportunities, feel free to reach out to me via
-                    </p>
+                  <p className="text-xl text-gray-700 mb-1 dark:text-gray-300 ">
+                    For any new opportunities, feel free to reach out to me via
+                  </p>
 
-<p
-                      className="text-xl text-gray-700 mb-6 dark:text-gray-300 "
-                    >
-                      {userData.email}
-                    </p>
-                  
+                  <p className="text-xl text-gray-700 mb-6 dark:text-gray-300 ">
+                    {userData.email}
+                  </p>
 
                   <h1 className="button-bg text-3xl px-2 py-1 inline-block font-bold text-gray-50">
                     Tech Stack
                   </h1>
-                  <div className="flex flex-row flex-wrap mt-8">
+                  <div className="mb-10 flex flex-row flex-wrap mt-8">
                     <Image
                       src="/icons/java.png"
                       alt="img"
@@ -195,20 +190,20 @@ const AboutMe: FC = ({ children }) => {
                     />
 
                     <Image
+                      src="/icons/mysql-logo.png"
+                      alt="img"
+                      width={50}
+                      height={50}
+                      title="MySQL"
+                      className="cursor-pointer mx-5 my-4"
+                    />
+
+                    <Image
                       src="/icons/mongodb.svg"
                       alt="img"
                       width={50}
                       height={50}
                       title="MongoDB"
-                      className="cursor-pointer mx-5 my-4"
-                    />
-
-                    <Image
-                      src="/icons/mysql.png"
-                      alt="img"
-                      width={50}
-                      height={50}
-                      title="MySQL"
                       className="cursor-pointer mx-5 my-4"
                     />
 
