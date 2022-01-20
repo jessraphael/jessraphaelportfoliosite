@@ -20,10 +20,10 @@ const Projects: FC = ({ children }) => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.projects.map((proj, idx) => (
             <ProjectCard
+            key={`${idx + 1}`}
               title={proj.title}
               link={proj.link}
               imgUrl={proj.imgUrl}
-              number={`${idx + 1}`}
             />
           ))}
         </div>
@@ -35,7 +35,7 @@ const Projects: FC = ({ children }) => {
 
 export default Projects;
 
-const ProjectCard = ({ title, link, imgUrl, number } : { title : string, link : string, imgUrl : string  , number : string})  => {
+const ProjectCard = ({ title, link, imgUrl, key } : { title : string, link : string, imgUrl : string  , key : string})  => {
   return (
     <a href={link} className="w-full block shadow-2xl">
       <div className="relative overflow-hidden">
