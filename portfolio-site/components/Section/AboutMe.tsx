@@ -46,51 +46,63 @@ const AboutMe: FC = ({ children }) => {
               <div className="flex flex-row flex-wrap mt-8">
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                  alt="javascriptImg"
                   className="h-20 w-20 mx-4 my-4"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="javaImg"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="typescriptImg"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="html"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="css"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="angular"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="vue"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="git"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="react"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="firebase"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="mysql"
                 />
                 <Image
                   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                   className="h-20 w-20 mx-4 my-4"
+                  alt="mongodb"
                 />
               </div>
             </div>
