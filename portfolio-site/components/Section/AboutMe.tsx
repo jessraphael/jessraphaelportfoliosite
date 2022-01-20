@@ -2,19 +2,21 @@ import React from "react";
 import { FC } from "react";
 import userData from "../data";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 const AboutMe: FC = ({ children }) => {
   return (
     <div>
-      <div id="aboutme" className="absolute"></div>
+      <div id="aboutme" className="absolute -top-24"></div>
       <div className="space overflow-hidden">
-        <section className="dark:bg-gray-800">
-          <div className="max-w-6xl mx-auto h-48 dark:bg-gray-800">
+        <section>
+          <div className="max-w-6xl mx-auto h-48 bg-gray-800">
             <h1 className="text-white text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
               About Me.
             </h1>
           </div>
-          <div className="-mt-10 bg-black">
+          <div className="space -mt-10">
+          <Fade direction="left" delay={500}>
             <div className="text-container max-w-6xl mx-auto pt-20">
               <p
                 className="leading-loose text-white text-2xl md:text-4xl font-semibold  mx-4"
@@ -24,7 +26,9 @@ const AboutMe: FC = ({ children }) => {
               </p>
               <br />
             </div>
+            </Fade>
           </div>
+          <Fade direction="up" delay={500}>
           <div className=" bg-black px-4">
             <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
               {/* Text area */}
@@ -223,6 +227,7 @@ const AboutMe: FC = ({ children }) => {
               </div>
             </div>
           </div>
+          </Fade>
         </section>
       </div>
     </div>
