@@ -20,7 +20,6 @@ const Projects: FC = ({ children }) => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.projects.map((proj, idx) => (
             <ProjectCard
-            key={`${idx + 1}`}
               title={proj.title}
               link={proj.link}
               imgUrl={proj.imgUrl}
@@ -35,7 +34,7 @@ const Projects: FC = ({ children }) => {
 
 export default Projects;
 
-const ProjectCard = ({ title, link, imgUrl, key } : { title : string, link : string, imgUrl : string  , key : string})  => {
+const ProjectCard = ({ title, link, imgUrl } : { title : string, link : string, imgUrl : string  })  => {
   return (
     <a href={link} className="w-full block shadow-2xl">
       <div className="relative overflow-hidden">
@@ -43,6 +42,7 @@ const ProjectCard = ({ title, link, imgUrl, key } : { title : string, link : str
           <Image
             src={imgUrl}
             alt="portfolio"
+            layout='fill'
             className="transform opacity-90 hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
           />
         </div>
