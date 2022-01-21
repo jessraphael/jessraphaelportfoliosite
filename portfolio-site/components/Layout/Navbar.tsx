@@ -32,13 +32,13 @@ const Navbar: FC<Props> = ({ location }) => {
       </div>
       {location === "home" ? (
         <>
-          {/* MOBILE */}
+          {/* MOBILE
           <div className="sm:hidden ml-auto">
             <FaBars
               className="text-white text-2xl"
               onClick={() => setSidebarOpen(true)}
             />
-          </div>
+          </div> */}
           <div
             className={`h-screen w-64 absolute right-0 top-0 bg-dark transition-all duration-300 flex flex-col gap-6 items-center pt-20 ${
               sidebarOpen ? "" : "translate-x-full"

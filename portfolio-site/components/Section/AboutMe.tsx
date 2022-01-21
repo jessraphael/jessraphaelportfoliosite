@@ -6,7 +6,6 @@ import { Fade } from "react-awesome-reveal";
 
 const AboutMe: FC = ({ children }) => {
   return (
-    <div className="pt-[84px] h-screen grid place-items-center mx-7">
       
       <div className="space overflow-hidden">
       <div id="aboutme" className="absolute -top-24"></div>
@@ -29,7 +28,6 @@ const AboutMe: FC = ({ children }) => {
               </div>
             </Fade>
           </div>
-          <Fade direction="up" delay={500}>
             <div className=" bg-black px-4">
               <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
                 {/* Text area */}
@@ -248,10 +246,8 @@ const AboutMe: FC = ({ children }) => {
                 </div>
               </div>
             </div>
-          </Fade>
         </section>
       </div>
-    </div>
   );
 };
 
