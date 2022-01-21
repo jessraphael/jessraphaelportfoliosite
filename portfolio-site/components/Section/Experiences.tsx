@@ -6,7 +6,7 @@ import userData from "../data";
 
 const Experiences: FC = ({ children }) => {
   return (
-    <div className="space overflow-hidden">
+    <div className=" overflow-hidden">
       <div id="experiences" className="absolute -top-24"></div>
     <section className=" px-8 py-40">
     <div className="max-w-6xl mx-auto h-48 dark:bg-gray-800">

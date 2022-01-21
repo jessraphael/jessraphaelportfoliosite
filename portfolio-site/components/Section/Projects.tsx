@@ -15,7 +15,6 @@ const Projects: FC = ({ children }) => {
           </h1>
         </div>
         {/* Grid starts here */}
-        <Fade direction="up" delay={100}>
           <div className=" dark:bg-black">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
               {userData.projects.map((proj, idx) => (
@@ -29,7 +28,6 @@ const Projects: FC = ({ children }) => {
               ))}
             </div>
           </div>
-        </Fade>
       </section>
     </div>
   );
