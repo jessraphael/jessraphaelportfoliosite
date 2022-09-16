@@ -61,7 +61,7 @@ const userData = {
       {
         title: "Investment Associate",
         company: "Protege Ventures",
-        year: "2021 Aug - Present",
+        year: "2021 Aug-Present",
         companyLink: "https://protege.vc/",
         desc: "SEA's 1st Student Venture Capital Fund. Analysed student startups in the pre-seed stage while performing deals sourcing and due diligence as a student venture capitalist",
       },
