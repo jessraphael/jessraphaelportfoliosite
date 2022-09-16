@@ -52,14 +52,21 @@ const userData = {
     
     experience: [
       {
-        title: "Investment Analyst",
+        title: "Product Management Intern",
+        company: "SeaMoney (Shopee)",
+        year: "2021-Present",
+        companyLink: "https://www.seamoney.com/",
+        desc: "Regional Credit Business Product Team for SeaMoney & Shopee. Spearheaded enhancement features for ShopeePayLater Malaysia & Philippines",
+      },
+      {
+        title: "Investment Associate",
         company: "Protege Ventures",
         year: "2021-Present",
         companyLink: "https://protege.vc/",
         desc: "SEA's 1st Student Venture Capital Fund. Analysed student startups in the pre-seed stage while performing deals sourcing and due diligence as a student venture capitalist",
       },
       {
-        title: "Internship : Associate, Application Engineer",
+        title: "Software Engineering Intern",
         company: "Sentient.io",
         year: "2021",
         companyLink: "https://www.sentient.io/en/",
