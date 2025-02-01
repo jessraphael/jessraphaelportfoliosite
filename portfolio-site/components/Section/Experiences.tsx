@@ -1,72 +1,63 @@
-import { FC } from "react";
-import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
-import Button from "../Layout/Button";
-import userData from "../data";
+import { FC } from 'react';
+import Image from 'next/image';
+import { Fade } from 'react-awesome-reveal';
+import Button from '../Layout/Button';
+import userData from '../data';
+import { Briefcase } from 'lucide-react';
 
 const Experiences: FC = ({ children }) => {
   return (
-    <div className=" overflow-hidden">
+    <div className="overflow-hidden">
       <div id="experiences" className="relative -top-24"></div>
-    <section className=" px-8 py-40">
-    <div className="max-w-6xl mx-auto h-48 dark:bg-gray-800">
-          <h1 className="text-white text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+      <section className="px-8 py-40">
+        {/* Header Section */}
+        <div className="mx-auto">
+          <h1 className="py-20 text-center text-5xl font-bold text-white">
             Experiences
           </h1>
         </div>
-        <div className="grid grid-cols-1 max-w-xl mt-10 mx-auto pt-20">
-          {/* Experience card */}
+
+        {/* Experience Cards Grid */}
+        <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-x-10 pt-20">
           {userData.experience.map((exp, idx) => (
-            <>
-              <ExperienceCard
-                key={idx}
-                title={exp.title}
-                desc={exp.desc}
-                year={exp.year}
-                company={exp.company}
-                companyLink={exp.companyLink}
-              />
-              {idx === userData.experience.length - 1 ? null : (
-                <div className="divider-container flex flex-col items-center -mt-2">
-                  <div className="w-4 h-4 bg-green-500 rounded-full relative z-10">
-                    <div className="w-4 h-4 bg-green-500 rounded-full relative z-10 animate-ping"></div>
+            <div key={idx} className="relative">
+              <div className="flex items-start space-x-4 rounded-lg bg-gray-100 p-6 shadow-lg dark:bg-gray-800">
+                <div className="flex-shrink-0">
+                  <Briefcase className="h-6 w-6 text-gray-500" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                    {exp.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {exp.company}, {exp.location}
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    {exp.year}
+                  </p>
+                  <ul className="mt-3 list-inside list-disc space-y-2 text-gray-700 dark:text-gray-300">
+                    {exp.desc.map((task, i) => (
+                      <li key={i}>{task}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Experience Divider */}
+              {idx !== userData.experience.length - 1 && (
+                <div className="divider-container -mt-2 flex flex-col items-center">
+                  <div className="relative z-10 h-4 w-4 rounded-full bg-green-500">
+                    <div className="relative z-10 h-4 w-4 animate-ping rounded-full bg-green-500"></div>
                   </div>
-                  <div className="w-1 h-24 bg-gray-200 dark:bg-gray-500 rounded-full -mt-2"></div>
+                  <div className="-mt-2 h-24 w-1 rounded-full bg-gray-200 dark:bg-gray-500"></div>
                 </div>
               )}
-            </>
+            </div>
           ))}
         </div>
-    </section>
+      </section>
     </div>
   );
 };
 
 export default Experiences;
-
-const ExperienceCard = ({
-  title,
-  desc,
-  year,
-  company,
-  companyLink,
-}: {
-  title: string;
-  desc: string;
-  year: string;
-  company: string;
-  companyLink: string;
-}) => {
-  return (
-    <div className="relative experience-card p-4  shadow-xl bg-gray-800 z-10 mx-4">
-      <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl font-bold text-white">
-        {year}
-      </h1>
-      <h1 className="font-semibold text-xl text-white">{title}</h1>
-      <a href={companyLink} className="text-gray-400">
-        {company}
-      </a>
-      <p className="text-white my-2">{desc}</p>
-    </div>
-  );
-};

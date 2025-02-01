@@ -1,33 +1,33 @@
-import React from "react";
-import { FC } from "react";
-import userData from "../data";
-import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
+import React from 'react';
+import { FC } from 'react';
+import userData from '../data';
+import Image from 'next/image';
+import { Fade } from 'react-awesome-reveal';
 
 const Projects: FC = ({ children }) => {
   return (
     <div className="space overflow-hidden">
       <div id="projects" className="relative -top-24"></div>
       <section>
-        <div className="max-w-6xl mx-auto h-48 bg-gray-800">
-          <h1 className=" text-white text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        <div className="mx-auto">
+          <h1 className="py-20 text-center text-5xl font-bold text-white">
             Projects
           </h1>
         </div>
         {/* Grid starts here */}
-          <div className=" dark:bg-black">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-              {userData.projects.map((proj, idx) => (
-                <ProjectCard
-                  key={proj.title}
-                  title={proj.title}
-                  link={proj.link}
-                  imgUrl={proj.imgUrl}
-                  description={proj.description}
-                />
-              ))}
-            </div>
+        <div className=" dark:bg-black">
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 py-20 pb-40 md:grid-cols-2">
+            {userData.projects.map((proj, idx) => (
+              <ProjectCard
+                key={proj.title}
+                title={proj.title}
+                link={proj.link}
+                imgUrl={proj.imgUrl}
+                description={proj.description}
+              />
+            ))}
           </div>
+        </div>
       </section>
     </div>
   );
@@ -47,25 +47,28 @@ const ProjectCard = ({
   description: string;
 }) => {
   return (
-    <div className="w-full h-full col-2">
-    <a href={link} className="w-full block shadow-2xl">
-      <div className="relative overflow-hidden">
-        <div className="h-72 object-cover">
-          <Image
-            src={imgUrl}
-            alt="portfolio"
-            layout="fill"
-            className="transform opacity-90 hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
-          />
+    <div className="col-2 h-full w-full">
+      <a href={link} className="block w-full shadow-2xl">
+        <div className="relative overflow-hidden">
+          <div className="h-72 object-cover">
+            <Image
+              src={imgUrl}
+              alt="portfolio"
+              layout="fill"
+              className="duration-2000 h-full w-full transform object-cover opacity-90 transition ease-out hover:scale-125"
+            />
+          </div>
+          <h1 className="absolute bottom-10 left-10 text-xl font-bold text-gray-50">
+            {title}
+          </h1>
         </div>
-        <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-          {title}
-        </h1>
+      </a>
+      <div className="h-1/5 w-full bg-black px-5 py-5">
+        <p className="font-semilight text-md w-full text-center text-gray-50">
+          {' '}
+          {description}{' '}
+        </p>
       </div>
-    </a>
-    <div className="bg-black w-full py-5 px-5 h-1/5">
-          <p className="w-full text-gray-50 text-center font-semilight text-md"> {description} </p>
-        </div>
     </div>
   );
 };

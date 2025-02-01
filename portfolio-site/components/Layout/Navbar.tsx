@@ -1,36 +1,38 @@
-import { FC, useState } from "react";
-import NavItem from "./NavItem";
-import userData from "../data";
-import { FaBars, FaTimes } from "react-icons/fa";
-import { BsGithub } from "react-icons/bs";
-import Link from "next/link";
+import { FC, useState } from 'react';
+import NavItem from './NavItem';
+import userData from '../data';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { BsGithub } from 'react-icons/bs';
+import Link from 'next/link';
+import ThemeToggle from '../ThemeToggle';
 
 type Props = {
-  location: "home";
+  location: 'home';
 };
 
 const Navbar: FC<Props> = ({ location }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const navItems = [
-    { title: "", href: "#home" },
-    // { title: "About Me", href: "#aboutme" },
-    // { title: "Projects", href: "#projects" },
-    // { title: "Experiences", href: "#experiences" },
+    { title: '', href: '#home' },
+    { title: 'About Me', href: '#aboutme' },
+    { title: 'Projects', href: '#projects' },
+    { title: 'Experiences', href: '#experiences' },
   ];
 
   return (
     <div
-      className={`fixed z-40 flex flex-row items-center w-full h-auto px-8 py-6 bg-dark`}
+      className={`fixed z-40 flex h-auto w-full flex-row items-center bg-white px-8 py-6 dark:bg-dark`}
     >
-      <div>
+      <div className="col-2 flex items-center space-x-3">
         <Link href="/" passHref>
-          <div className="text-1xl font-black text-white select-nonehover:text-transparent bg-clip-text cursor-pointer select-none">
+          <div className="text-1xl select-nonehover:text-transparent cursor-pointer select-none bg-clip-text font-black  text-black dark:text-white">
             Jess Raphael Ong
           </div>
         </Link>
+        <ThemeToggle />
       </div>
-      {location === "home" ? (
+      {location === 'home' ? (
         <>
           {/* MOBILE
           <div className="sm:hidden ml-auto">
@@ -40,12 +42,12 @@ const Navbar: FC<Props> = ({ location }) => {
             />
           </div> */}
           <div
-            className={`h-screen w-64 absolute right-0 top-0 bg-dark transition-all duration-300 flex flex-col gap-6 items-center pt-20 ${
-              sidebarOpen ? "" : "translate-x-full"
+            className={`absolute right-0 top-0 flex h-screen w-64 flex-col items-center gap-6 bg-dark pt-20 transition-all duration-300 ${
+              sidebarOpen ? '' : 'translate-x-full'
             }`}
           >
             <FaTimes
-              className="text-white text-2xl absolute top-6 right-6 "
+              className="absolute right-6 top-6 text-2xl text-white "
               onClick={() => setSidebarOpen(false)}
             />
             {navItems.map((item) => {
@@ -60,7 +62,7 @@ const Navbar: FC<Props> = ({ location }) => {
             })}
           </div>
           {/* DESKTOP */}
-          <div className="hidden sm:flex flex-grow max-w-md justify-evenly">
+          <div className="hidden max-w-md flex-grow justify-evenly sm:flex">
             {navItems.map((item) => {
               return (
                 <NavItem key={item.title} title={item.title} href={item.href} />
@@ -72,10 +74,10 @@ const Navbar: FC<Props> = ({ location }) => {
         <></>
       )}
 
-      <div className="space-x-4 flex flex-row items-center ml-auto">
+      <div className="ml-auto flex flex-row items-center space-x-4">
         <a
           href={userData.socialLinks.facebook}
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
+          className="text-base font-normal text-black dark:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +97,7 @@ const Navbar: FC<Props> = ({ location }) => {
         </a>
         <a
           href={userData.socialLinks.instagram}
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
+          className="text-base font-normal text-black dark:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -110,12 +112,12 @@ const Navbar: FC<Props> = ({ location }) => {
         </a>
 
         <a href={userData.socialLinks.github}>
-          <BsGithub className="text-white text-2xl cursor-pointer" />
+          <BsGithub className="cursor-pointer text-2xl text-black dark:text-white" />
         </a>
 
         <a
           href={userData.socialLinks.linkedin}
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
+          className="text-base font-normal text-black dark:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

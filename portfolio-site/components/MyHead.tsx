@@ -1,5 +1,5 @@
-import { FC } from "react";
-import Head from "next/head";
+import { FC } from 'react';
+import Head from 'next/head';
 
 type Props = {};
 
@@ -8,7 +8,7 @@ const MyHead: FC<Props> = () => {
     <Head>
       <title>Jess Raphael Ong</title>
       <meta name="description" content="Welcome to my world" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/bowling.ico" />
     </Head>
   );
 };

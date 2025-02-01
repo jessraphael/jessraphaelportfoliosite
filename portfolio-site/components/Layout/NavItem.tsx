@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 type Props = {
   title: string;
@@ -11,7 +11,7 @@ const NavItem: FC<Props> = ({ title, href, closeSidebar }) => {
     <>
       <div>
         <a
-          className="flex flex-col items-center text-center text-white cursor-pointer text-md "
+          className="text-md flex cursor-pointer flex-col items-center text-center text-black dark:text-white "
           href={href}
           onClick={closeSidebar}
         >
