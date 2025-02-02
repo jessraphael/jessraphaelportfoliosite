@@ -9,10 +9,10 @@ const Experiences: FC = ({ children }) => {
   return (
     <div className="overflow-hidden">
       <div id="experiences" className="relative -top-24"></div>
-      <section className="px-8 py-40">
+      <section className="px-8 py-20">
         {/* Header Section */}
         <div className="mx-auto">
-          <h1 className="py-20 text-center text-5xl font-bold text-black dark:text-white">
+          <h1 className="py-5 text-center text-5xl font-bold text-black dark:text-white">
             Experiences
           </h1>
         </div>
@@ -35,7 +35,7 @@ const Experiences: FC = ({ children }) => {
                   <p className="text-sm text-gray-500 dark:text-gray-400">
                     {exp.year}
                   </p>
-                  <ul className="mt-3 list-inside list-disc space-y-2 text-gray-700 dark:text-gray-300">
+                  <ul className="mt-3 list-outside list-disc space-y-2 text-gray-700 dark:text-gray-300">
                     {exp.desc.map((task, i) => (
                       <li key={i}>{task}</li>
                     ))}
@@ -49,7 +49,7 @@ const Experiences: FC = ({ children }) => {
                   <div className="relative z-10 h-4 w-4 rounded-full bg-green-500">
                     <div className="relative z-10 h-4 w-4 animate-ping rounded-full bg-green-500"></div>
                   </div>
-                  <div className="-mt-2 h-24 w-1 rounded-full bg-gray-200 dark:bg-gray-500"></div>
+                  <div className="-mt-2 h-20 w-1 rounded-full bg-gray-200 dark:bg-gray-500"></div>
                 </div>
               )}
             </div>
