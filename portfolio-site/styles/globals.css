@@ -52,7 +52,7 @@ html.dark {
   }
 
   .subtext-1{
-    font-size:12px;
+    font-size:20px;
     color: #FFFFFF;
     font-weight: 500;
   }
@@ -81,7 +81,7 @@ html.dark {
       font-size: 35px;
     }
     .subtext-1 {
-      font-size: 14px;
+      font-size: 20px;
     }
   }
   
@@ -93,7 +93,7 @@ html.dark {
       font-size: 50px;
     }
     .subtext-1 {
-      font-size: 16px;
+      font-size: 24px;
     }
   }
   

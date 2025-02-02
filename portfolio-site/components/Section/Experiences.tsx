@@ -12,7 +12,7 @@ const Experiences: FC = ({ children }) => {
       <section className="px-8 py-40">
         {/* Header Section */}
         <div className="mx-auto">
-          <h1 className="py-20 text-center text-5xl font-bold text-white">
+          <h1 className="py-20 text-center text-5xl font-bold text-black dark:text-white">
             Experiences
           </h1>
         </div>

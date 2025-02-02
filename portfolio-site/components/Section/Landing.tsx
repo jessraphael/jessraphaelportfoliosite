@@ -5,13 +5,15 @@ import { FC, useState, useEffect } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import userData from '../data';
 
+import Typewriter from 'typewriter-effect';
+
 const LandingPage: FC = () => {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
     // Button is displayed after scrolling for 50 pixels
     const toggleVisibility = (): void => {
-      setOffset(window.pageYOffset);
+      setOffset(window.scrollY);
     };
 
     window.addEventListener('scroll', toggleVisibility);
@@ -33,7 +35,21 @@ const LandingPage: FC = () => {
             <Fade direction="down" delay={500}>
               <p className="title-1 w-full">Hi, I am</p>
               <span className="title-2 w-full">{userData.name}</span>
-              <p className="subtext-1">{userData.metaHeader}</p>
+              <div className="subtext-1">
+                <Typewriter
+                  options={{
+                    strings: [
+                      'Software Engineer',
+                      'Adventurer',
+                      'Aspiring Technologist',
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    delay: 50, // Faster typing speed (default is ~75ms)
+                    deleteSpeed: 25, // Faster delete speed
+                  }}
+                />
+              </div>
             </Fade>
           </div>
 

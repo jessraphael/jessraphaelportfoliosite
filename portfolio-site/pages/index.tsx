@@ -17,8 +17,8 @@ const Home: NextPage = () => {
       <Body>
         <Border>
           <AboutMe />
-          <Projects />
           <Experiences />
+          <Projects />
         </Border>
       </Body>
 

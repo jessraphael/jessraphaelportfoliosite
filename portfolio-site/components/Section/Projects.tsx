@@ -6,11 +6,11 @@ import { Fade } from 'react-awesome-reveal';
 
 const Projects: FC = ({ children }) => {
   return (
-    <div className="space overflow-hidden">
+    <div className="space overflow-hidden bg-white dark:bg-black">
       <div id="projects" className="relative -top-24"></div>
       <section>
         <div className="mx-auto">
-          <h1 className="py-20 text-center text-5xl font-bold text-white">
+          <h1 className="py-20 text-center text-5xl font-bold text-black dark:text-white ">
             Projects
           </h1>
         </div>
@@ -63,8 +63,8 @@ const ProjectCard = ({
           </h1>
         </div>
       </a>
-      <div className="h-1/5 w-full bg-black px-5 py-5">
-        <p className="font-semilight text-md w-full text-center text-gray-50">
+      <div className="h-1/5 w-full bg-white px-5 py-5 dark:bg-black">
+        <p className="font-semilight text-md text-centertext-black w-full dark:text-white">
           {' '}
           {description}{' '}
         </p>
