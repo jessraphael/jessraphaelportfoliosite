@@ -55,7 +55,13 @@ const userData = {
       company: 'PayPal',
       year: 'Jan 2025 - Present',
       companyLink: 'https://www.paypal.com/sg/home',
-      desc: [],
+      desc: [
+        'Contributed to a greenfield FX rate persistence and currency conversion backend service (Miles to USD) to expand Wallet-as-a-Service for a major airline partner, enabling aviation miles as a real-time payment option. Developed distributed backend services using Java (Spring Boot), Maven, SQL, and GCP Spanner, adding production-ready endpoints beyond the initial sandbox release.',
+        'Delivered full-cycle frontend migration and implemented reusable modules for Merchant and Consumer KYC flows as part of regulatory compliance using TypeScript, React.js, and Node.js, including dynamic data collection forms, Re-KYC triggers, and conditional documentation workflows—enhancing platform extensibility and accelerating future compliance rollouts.',
+        'Enhanced core payment compliance APIs handling millions of daily requests using Java (Spring Boot) and Maven, implementing cross component real-time payment fulfilment decisioning logic that prevented regulatory tax holds and enabled scalable partner integrations in branded checkout experiences.',
+        'Improved platform stability and user experience by resolving production issues, including accessibility and edge-case failures. Implemented durable fixes for legacy user accounts to accommodate updated KYC flows, ensuring seamless migration.',
+        'Maintained high engineering standards and release quality through Test-Driven Development (TDD), writing comprehensive frontend tests with Playwright and backend tests with JUnit/Mockito. Leveraged CI/CD (Harness, Jenkins) and observability tools (Datadog) to ensure deployment reliability and rapid issue resolution. Collaborated cross-functionally with Senior Engineers, Solution Architects, Quality Engineering, Product, and Business teams to deliver production-ready solutions at scale.',
+      ],
     },
     {
       title: 'Technology Analyst',
